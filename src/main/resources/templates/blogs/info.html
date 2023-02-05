@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title th:text="#{app.title.msg}"></title>
+    <link rel="stylesheet" type="text/css" th:href="@{/main.css}" href="../../static/main.css"/>
+</head>
+
+<body>
+<header th:replace="fragments/header::header">
+</header>
+<section>
+    <nav th:insert="fragments/nav::nav-default">
+    </nav>
+    <article>
+        <h1 style="alignment: center">Local time in milliseconds: </h1>
+        <h2 th:text="${time}"></h2>
+    </article>
+</section>
+
+<footer th:replace="fragments/footer::footer">
+</footer>
+</body>
+
+</html>

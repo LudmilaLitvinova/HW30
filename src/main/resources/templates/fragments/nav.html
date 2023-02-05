@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>App Fragments</title>
+</head>
+<body>
+<!-- Default Navigator -->
+<ul th:fragment = "nav-default">
+    <li><a class="button" th:href="@{/welcome}">Welcome</a></li>
+    <br>
+    <li><a class="button" th:href="@{/info}">Info</a></li>
+</ul>
+<div th:fragment="copyright">
+    &copy; o7planning.org
+</div>
+</body>
+</html>

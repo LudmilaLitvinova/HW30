@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: green;
+    /*padding: 5px;*/
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    border: 3px solid black;
+}
+nav {
+    float: left;
+    width:15%;
+    background-color: green;
+    padding: 20px;
+    border: 3px solid black;
+    min-height: 75vh;
+    font-size: 24px;
+    color: black;
+}
+.button {
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: yellow; /* фон кнопки */
+    padding: .4em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: 3px solid black;
+    width:150px;
+    float:left;
+}
+.button:hover { background: yellowgreen; } /* при наведении курсора мышки */
+.button:active { background: yellow; } /* при нажатии */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+article {
+    float: left;
+    padding: 20px;
+    width: 85%;
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    min-height: 75vh;
+}
+footer {
+    background-color:green;
+    text-align: center;
+    color: black;
+    position:absolute;
+    bottom:0;
+    width: 99%;
+    border: 3px solid black;
+
+
+}
